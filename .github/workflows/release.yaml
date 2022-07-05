@@ -14,9 +14,15 @@ jobs:
           repository: atomicfi/action-release-action
           ref: v1.0.1
           path: ./.github/actions/action-release-action
+      - name: Echo and PWD 1
+        run: |
+          pwd
+          echo $(ls ./.github/actions)
+          echo $(ls ./.github/actions/action-release-action)
+          pwd
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Echo and PWD
+      - name: Echo and PWD 2
         run: |
           pwd
           echo $(ls ./.github/actions)
