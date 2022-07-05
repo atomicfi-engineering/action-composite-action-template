@@ -14,10 +14,11 @@ jobs:
           repository: atomicfi/action-release-action
           ref: v1.0.1
           path: ./.github/actions/action-release-action
-      - name: Echo
+      - name: Echo and PWD
         run: |
           echo $(ls ./.github/actions)
           echo $(ls ./.github/actions/action-release-action)
+          pwd
       - name: Release action
         uses: ./.github/actions/action-release-action
         with:
