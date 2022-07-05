@@ -1,6 +1,6 @@
 name: Release #
 on:
-  commit:
+  push:
     branches:
       - fix-workflow
 jobs:
