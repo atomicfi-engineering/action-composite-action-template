@@ -13,10 +13,11 @@ jobs:
           token: ${{ secrets.GH_BOT_USER_TOKEN }}
           repository: atomicfi/action-release-action
           ref: v1.0.1
-          path: .github/actions/action-release-action
+          path: ./.github/actions/action-release-action
       - name: Echo
         run: |
           echo $(ls ./.github/actions)
+          echo $(ls ./.github/actions/action-release-action)
       - name: Release action
         uses: ./.github/actions/action-release-action
         with:
