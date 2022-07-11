@@ -1,8 +1,8 @@
-name: Release #
+name: Release
 on:
   push:
     branches:
-      - fix-workflow
+      - main
 jobs:
   release-action:
     runs-on: ubuntu-latest
