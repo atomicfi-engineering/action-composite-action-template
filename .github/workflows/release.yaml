@@ -1,10 +1,13 @@
-name: Release #
+name: Release
 on:
   pull_request:
     types:
       - closed
     branches:
       - main
+    paths:
+      - action.yaml
+
 jobs:
   release-action:
     runs-on: ubuntu-latest
