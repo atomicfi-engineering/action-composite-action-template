@@ -13,7 +13,7 @@ Greet someone
 <!-- start usage -->
 
 ```yaml
-- uses: atomicfi/action-composite-action-template@undefined
+- uses: atomicfi-engineering/action-composite-action-template@undefined
   with:
     # Who to greet
     # Default: World
